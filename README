@@ -1,0 +1,3 @@
+To use, pull repo to ~/ and add the following line to ~/.bash_profile:
+
+source ~/dot-files/.profile
