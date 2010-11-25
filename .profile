@@ -1,6 +1,3 @@
-# MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 # Editor stuff
 export EDITOR='mate -w'
 export LESSEDIT='mate -l %lm %f'
