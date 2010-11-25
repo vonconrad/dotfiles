@@ -17,7 +17,7 @@ alias ll="ls -lh"
 alias lla="ls -lah"
 
 # Rails aliases
-alias c="if [ -f "script/console" ]; then script/console; else rails console; fi;"
+alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
 alias migrate="rake db:migrate"
 alias rollback="rake db:rollback"
 
