@@ -16,6 +16,11 @@ alias m="mate"
 alias ll="ls -lh"
 alias lla="ls -lah"
 
+# Rails aliases
+alias c="if [ -f "script/console" ]; then script/console; else rails console; fi;"
+alias migrate="rake db:migrate"
+alias rollback="rake db:rollback"
+
 # Git aliases
 current_branch() {
   echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
