@@ -29,8 +29,8 @@ alias gb="git branch"
 alias gc="git commit"
 alias gch="git checkout"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit --date=relative"
-alias gpull='git pull echannel `current_branch`'
-alias gpush='git push echannel `current_branch`'
+alias gpull='git pull origin `current_branch`'
+alias gpush='git push origin `current_branch`'
 alias gs="git status -s -b"
 alias gsh="git show"
 alias gst="git stash"
