@@ -17,6 +17,7 @@ alias worker="cd $worker"
 # Basic command aliases
 alias m="mate"
 alias ll="ls -lh"
+alias lla="ls -lah"
 
 # Git aliases
 current_branch() {
