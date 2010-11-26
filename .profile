@@ -32,6 +32,7 @@ alias gb="git branch"
 alias gbl="git blame --date=short"
 alias gc="git commit"
 alias gch="git checkout"
+alias gd="git diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit --date=relative"
 alias gpull='git pull origin `current_branch`'
 alias gpush='git push origin `current_branch`'
