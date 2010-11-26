@@ -35,6 +35,7 @@ alias gch="git checkout"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit --date=relative"
 alias gpull='git pull origin `current_branch`'
 alias gpush='git push origin `current_branch`'
+alias gr="git reset"
 alias gs="git status -s -b"
 alias gsh="git show"
 alias gst="git stash"
