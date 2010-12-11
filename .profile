@@ -7,9 +7,12 @@ export GIT_EDITOR='mate -wl1'
 export web=/Library/WebServer/Documents/
 export interface=$web/interface
 export worker=$web/worker
+export projects=~/Projects
 alias web="cd $web"
 alias interface="cd $interface"
 alias worker="cd $worker"
+alias projects="cd $projects"
+alias proj="projects"
 
 # Basic command aliases
 alias m="mate"
