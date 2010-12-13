@@ -60,6 +60,6 @@ alias stash="gst"
 alias status="gs"
 
 # Config files
-alias hosts="sudo mate /private/etc/hosts"
-alias httpd="sudo mate /private/etc/apache2/httpd.conf"
-alias vhosts="sudo mate /private/etc/apache2/extra/httpd-vhosts.conf"
+alias hosts="mate /private/etc/hosts"
+alias httpd="mate /private/etc/apache2/httpd.conf"
+alias vhosts="mate /private/etc/apache2/extra/httpd-vhosts.conf"
