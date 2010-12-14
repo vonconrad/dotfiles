@@ -18,6 +18,8 @@ alias proj="projects"
 alias m="mate"
 alias ll="ls -lh"
 alias lla="ls -lah"
+alias finder='open'
+alias f='finder'
 
 # Rails aliases
 alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
