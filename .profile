@@ -25,6 +25,7 @@ alias f='finder'
 alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
 alias migrate="rake db:migrate"
 alias rollback="rake db:rollback"
+alias seed="rake db:seed"
 alias tlog="tail -f log/development.log"
 
 # Git aliases
