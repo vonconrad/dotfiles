@@ -34,6 +34,8 @@ current_branch() {
 }
 
 alias ga="git add"
+alias gac="git commit -a"
+alias gall="git add -A"
 alias gap="git add -p"
 alias gau="git update-index --assume-unchanged"
 alias gb="git branch"
