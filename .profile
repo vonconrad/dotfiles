@@ -21,7 +21,7 @@ alias lla="ls -lah"
 alias finder='open'
 alias f='finder'
 
-# Rails aliases
+# Ruby/Rails aliases
 alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
 alias migrate="rake db:migrate"
 alias rollback="rake db:rollback"
