@@ -27,6 +27,7 @@ alias migrate="rake db:migrate"
 alias rollback="rake db:rollback"
 alias seed="rake db:seed"
 alias tlog="tail -f log/development.log"
+alias rsp="bundle exec rspec spec"
 
 # Git aliases
 current_branch() {
