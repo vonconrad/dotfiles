@@ -1,3 +1,6 @@
-To use, pull repo to ~/ and add the following line to ~/.bash_profile:
+To use, pull repo to ~/ and add the following line to ~/.bashrc:
 
-source ~/dot-files/.profile
+source ~/dot-files/aliases
+source ~/dot-files/console
+source ~/dot-files/export
+source ~/dot-files/functions
