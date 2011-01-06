@@ -1,3 +1,6 @@
+# Basic
+alias reload='. ~/.bash_profile'
+
 # Editor stuff
 export EDITOR='mate -w'
 export LESSEDIT='mate -l %lm %f'
