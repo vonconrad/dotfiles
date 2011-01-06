@@ -16,6 +16,7 @@ alias proj="projects"
 
 # Basic command aliases
 alias m="mate"
+alias m.="m ."
 alias ll="ls -lh"
 alias lla="ls -lah"
 alias finder='open'
