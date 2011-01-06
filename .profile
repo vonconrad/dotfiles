@@ -27,11 +27,17 @@ alias f='finder'
 
 # Ruby/Rails aliases
 alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
-alias migrate="rake db:migrate"
-alias rollback="rake db:rollback"
+alias r='rake'
+alias rt='rake -T'
+alias bx="bundle exec"
+alias bi="bundle install"
+alias bu="bundle update"
+alias rsp="bundle exec rspec spec"
 alias seed="rake db:seed"
 alias tlog="tail -f log/development.log"
-alias rsp="bundle exec rspec spec"
+alias restart="touch tmp/restart.txt"
+alias migrate="rake db:migrate"
+alias rollback="rake db:rollback"
 
 # Git aliases
 current_branch() {
