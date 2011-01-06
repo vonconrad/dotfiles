@@ -1,5 +1,5 @@
 # Basic
-alias reload='. ~/.bash_profile'
+alias reload='. ~/.bashrc'
 
 # Editor stuff
 export EDITOR='mate -w'
