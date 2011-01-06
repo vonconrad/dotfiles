@@ -1,0 +1,4 @@
+# Editors
+export EDITOR='mate -w'
+export LESSEDIT='mate -l %lm %f'
+export GIT_EDITOR='mate -wl1'

@@ -1,23 +1,5 @@
 # Basic
 alias reload='. ~/.bashrc'
-
-# Editor stuff
-export EDITOR='mate -w'
-export LESSEDIT='mate -l %lm %f'
-export GIT_EDITOR='mate -wl1'
-
-# Web directories
-export web=/Library/WebServer/Documents/
-export interface=$web/interface
-export worker=$web/worker
-export projects=~/Projects
-alias web="cd $web"
-alias interface="cd $interface"
-alias worker="cd $worker"
-alias projects="cd $projects"
-alias proj="projects"
-
-# Basic command aliases
 alias m="mate"
 alias m.="m ."
 alias ll="ls -lh"
@@ -25,7 +7,19 @@ alias lla="ls -lah"
 alias finder='open'
 alias f='finder'
 
-# Ruby/Rails aliases
+# Directory shortcuts
+alias web="cd /Library/WebServer/Documents/"
+alias interface="cd /Library/WebServer/Documents/interface/"
+alias worker="cd /Library/WebServer/Documents/worker/"
+alias projects="cd ~/Projects"
+alias proj="projects"
+
+# Config file shortcuts
+alias hosts="mate /private/etc/hosts"
+alias httpd="mate /private/etc/apache2/httpd.conf"
+alias vhosts="mate /private/etc/apache2/extra/httpd-vhosts.conf"
+
+# Ruby/Rails
 alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
 alias r='rake'
 alias rt='rake -T'
@@ -39,11 +33,7 @@ alias restart="touch tmp/restart.txt"
 alias migrate="rake db:migrate"
 alias rollback="rake db:rollback"
 
-# Git aliases
-current_branch() {
-  echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-}
-
+# Git
 alias ga="git add"
 alias gac="git commit -a"
 alias gall="git add -A"
@@ -62,7 +52,6 @@ alias gr="git reset"
 alias gs="git status -s -b"
 alias gsh="git show"
 alias gst="git stash"
-
 alias add="gap"
 alias blame="gbl"
 alias branch="gb"
@@ -76,23 +65,3 @@ alias push="gpush"
 alias show="gsh"
 alias stash="gst"
 alias status="gs"
-
-# Config files
-alias hosts="mate /private/etc/hosts"
-alias httpd="mate /private/etc/apache2/httpd.conf"
-alias vhosts="mate /private/etc/apache2/extra/httpd-vhosts.conf"
-
-# Bash prompt
-function proml {
-  local        RED="\[\033[0;31m\]"
-  local      GREEN="\[\033[0;32m\]"
-  local     YELLOW="\[\033[0;33m\]"
-  local       BLUE="\[\033[0;34m\]"
-  local    MAGENTA="\[\033[0;35m\]"
-  local       CYAN="\[\033[0;36m\]"
-  local BOLD_WHITE="\[\033[1;37m\]"
-  local      WHITE="\[\033[0;37m\]"
-
-  PS1="[$CYAN\u@\h$WHITE:$RED\W$WHITE] $GREEN\$(current_branch)$WHITE $WHITE$ "
-}
-proml
