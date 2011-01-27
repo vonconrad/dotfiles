@@ -1,4 +1,11 @@
-# Git aliases
+# Git functions
 current_branch() {
   echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+}
+
+# Rails functions
+create_migration() {
+    if [[ `rails generate migration $1 2> /dev/null` =~ db/migrate/.* ]]; then
+        mate ${BASH_REMATCH[0]}
+    fi
 }
