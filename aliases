@@ -46,6 +46,7 @@ alias gc="git commit -v"
 alias gch="git checkout"
 alias gd="git diff | mate"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit --date=relative"
+alias gm="git merge"
 alias gnau="git update-index --no-assume-unchanged"
 alias gpull='git pull origin `current_branch`'
 alias gpush='git push origin `current_branch`'
