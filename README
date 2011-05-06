@@ -1,3 +1,3 @@
-To use, pull repo to ~/ and execute `./install.sh`.
+To use, clone repo to ~/ and execute `./install.sh`.
 
 If you are unable to run the install file, execute `chmod 700 install.sh` and try again.
