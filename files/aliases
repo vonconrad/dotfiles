@@ -23,6 +23,7 @@ alias vhosts="mate /private/etc/apache2/extra/httpd-vhosts.conf"
 alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
 alias cm="create_migration"
 alias r='rake'
+alias ra='create_ruby_app'
 alias rt='rake -T'
 alias bx="bundle exec"
 alias bi="bundle install"

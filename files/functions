@@ -3,6 +3,33 @@ current_branch() {
   echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 }
 
+# Ruby functions
+create_ruby_app() {
+    # Create directory
+    mkdir $1
+    cd    $1
+
+    # Create directories and readme
+    mkdir -p lib/$1
+    mkdir -p spec/$1
+    touch README.rdoc
+
+    # Create default config files
+    echo -e "rvm_gemset_create_on_use_flag=1\nrvm_project_rvmrc_default=1\nrvm 1.9.2@$1" > .rvmrc
+    echo -e "pkg/*\n*.gem\n.bundle\n.DS_Store\n*.swp"                                    > .gitignore
+
+    # Create gem and rake files
+    echo "source 'http://rubygems.org'"                           > Gemfile
+    echo -e "require 'bundler'\nBundler::GemHelper.install_tasks" > Rakefile
+
+    # Create default lib and spec files
+    echo -e "require 'rubygems'\nrequire 'bundler/setup'"               > lib/$1.rb
+    echo "require File.join(File.dirname(__FILE__), '..', 'lib', '$1')" > spec/spec_helper.rb
+
+    # Initialize git repo, add all files and commit
+    git init && gall && gc -m "First commit"
+}
+
 # Rails functions
 create_migration() {
     if [[ `rails generate migration $1 2> /dev/null` =~ db/migrate/.* ]]; then
