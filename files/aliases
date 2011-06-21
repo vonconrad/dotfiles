@@ -32,7 +32,7 @@ alias rsp="bundle exec rspec"
 alias rspa="bundle exec rspec spec"
 alias seed="rake db:seed"
 alias tlog="tail -f log/development.log"
-alias restart="touch tmp/restart.txt"
+alias restart="if [ -f 'tmp/restart.txt' ]; then touch tmp/restart.txt; fi;"
 alias migrate="rake db:migrate"
 alias rollback="rake db:rollback"
 
