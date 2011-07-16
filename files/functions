@@ -30,6 +30,10 @@ create_ruby_app() {
     git init && gall && gc -m "First commit"
 }
 
+bundler_notify() {
+    growlnotify -m "Project directory: $(pwd)" "Bundle complete"
+}
+
 # Rails functions
 create_migration() {
     if [[ `rails generate migration $1 2> /dev/null` =~ db/migrate/.* ]]; then
