@@ -8,9 +8,8 @@ alias finder='open'
 alias f='finder'
 
 # Directory shortcuts
-alias web="cd /Library/WebServer/Documents/"
-alias interface="cd /Library/WebServer/Documents/interface/"
-alias worker="cd /Library/WebServer/Documents/worker/"
+alias web="cd ~/Sites"
+alias dc="cd ~/Projects/dynamiccreative"
 alias projects="cd ~/Projects"
 alias proj="projects"
 alias show="setfile -a v"
