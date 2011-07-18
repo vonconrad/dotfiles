@@ -13,6 +13,8 @@ alias interface="cd /Library/WebServer/Documents/interface/"
 alias worker="cd /Library/WebServer/Documents/worker/"
 alias projects="cd ~/Projects"
 alias proj="projects"
+alias show="setfile -a v"
+alias hide="setfile -a V"
 
 # Config file shortcuts
 alias hosts="mate /private/etc/hosts"
