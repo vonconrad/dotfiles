@@ -26,18 +26,18 @@ alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi
 alias cm="create_migration"
 alias r='bx rake'
 alias ra='create_ruby_app'
-alias rt='rake -T'
+alias rt='r -T'
 alias bx="bundle exec"
 alias bi="bundle install && bundler_notify && restart"
 alias bu="bundle update && bundler_notify && restart"
 alias rsp="bundle exec rspec"
 alias rspa="bundle exec rspec spec"
-alias seed="rake db:seed"
+alias seed="r db:seed"
 alias tlog="tail -f log/development.log"
 alias restart="if [ -f 'tmp/restart.txt' ]; then touch tmp/restart.txt; fi;"
-alias migrate="rake db:migrate"
-alias rollback="rake db:rollback"
-alias workers="QUEUE=* COUNT=5 bx rake resque:workers"
+alias migrate="r db:migrate"
+alias rollback="r db:rollback"
+alias workers="QUEUE=* COUNT=5 r resque:workers"
 
 # Git
 alias ga="git add"
