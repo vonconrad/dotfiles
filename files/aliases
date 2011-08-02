@@ -37,6 +37,7 @@ alias tlog="tail -f log/development.log"
 alias restart="if [ -f 'tmp/restart.txt' ]; then touch tmp/restart.txt; fi;"
 alias migrate="r db:migrate"
 alias rollback="r db:rollback"
+alias prepare="r db:test:prepare"
 alias workers="QUEUE=* COUNT=5 r resque:workers"
 
 # Git
