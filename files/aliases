@@ -26,6 +26,7 @@ alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi
 alias cm="create_migration"
 alias r='bx rake'
 alias ra='create_ruby_app'
+alias rr='r routes'
 alias rt='r -T'
 alias bx="bundle exec"
 alias bi="bundle install && bundler_notify && restart"
