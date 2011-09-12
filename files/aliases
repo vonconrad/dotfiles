@@ -6,6 +6,7 @@ alias ll="ls -lhG"
 alias lla="ls -lahG"
 alias finder='open'
 alias f='finder'
+alias ducks='du -cksh * | sort -rn|head -11'
 
 # Directory shortcuts
 alias web="cd ~/Sites"
