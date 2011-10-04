@@ -11,6 +11,7 @@ alias ducks='du -cksh * | sort -rn|head -11'
 # Directory shortcuts
 alias web="cd ~/Sites"
 alias dc="cd ~/Projects/dynamiccreative"
+alias dcc="dc && c"
 alias projects="cd ~/Projects"
 alias proj="projects"
 alias p="projects"
