@@ -29,6 +29,7 @@ alias cm="create_migration"
 alias r='bx rake'
 alias ra='create_ruby_app'
 alias rr='r routes'
+alias rrt='rr > routes.txt'
 alias rt='r -T'
 alias bx="bundle exec"
 alias bi="bundle install && bundler_notify && restart"
