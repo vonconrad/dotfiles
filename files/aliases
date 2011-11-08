@@ -7,6 +7,7 @@ alias lla="ls -lahG"
 alias finder='open'
 alias f='finder'
 alias ducks='du -cksh * | sort -rn|head -11'
+alias ip='curl whatismyip.org && echo'
 
 # Directory shortcuts
 alias web="cd ~/Sites"
