@@ -40,3 +40,7 @@ create_migration() {
         mate ${BASH_REMATCH[0]}
     fi
 }
+
+rails_generate() {
+    rails generate ${*} --skip;
+}
