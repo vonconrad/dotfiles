@@ -17,6 +17,7 @@ create_ruby_app() {
     # Create default config files
     echo -e "rvm_gemset_create_on_use_flag=1\nrvm_project_rvmrc_default=1\nrvm 1.9.2@$1" > .rvmrc
     echo -e "pkg/*\n*.gem\n.bundle\n.DS_Store\n*.swp"                                    > .gitignore
+    echo -e "--format Fuubar\n--color"                                                   > .rspec
 
     # Create gem and rake files
     echo "source 'http://rubygems.org'"                           > Gemfile
