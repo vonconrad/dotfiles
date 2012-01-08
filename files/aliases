@@ -36,6 +36,7 @@ alias rt='r -T'
 alias bx="bundle exec"
 alias bi="bundle install && bundler_notify && restart"
 alias bu="bundle update && bundler_notify && restart"
+alias rbv="rvm-prompt v p g"
 alias rsp="bundle exec rspec"
 alias rspa="bundle exec rspec spec"
 alias seed="r db:seed"
