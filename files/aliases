@@ -1,11 +1,12 @@
 # Basic
 alias reload='. ~/.bashrc'
-alias m="mate"
-alias m.="m ."
+alias m="s"
+alias m.="s ."
 alias ll="ls -lhG"
 alias lla="ls -lahG"
 alias finder='open'
 alias f='finder'
+alias s='subl'
 alias ducks='du -cksh * | sort -rn|head -11'
 alias ip='curl whatismyip.org && echo'
 

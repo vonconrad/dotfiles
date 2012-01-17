@@ -2,6 +2,6 @@
 export PATH=/usr/local/bin:$PATH
 
 # Editors
-export EDITOR='mate -w'
-export LESSEDIT='mate -l %lm %f'
-export GIT_EDITOR='mate -wl1'
+export EDITOR='subl -w'
+export LESSEDIT='subl -l %lm %f'
+export GIT_EDITOR='subl -wl1'
