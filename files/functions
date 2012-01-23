@@ -38,7 +38,7 @@ bundler_notify() {
 # Rails functions
 create_migration() {
     if [[ `rails generate migration $1 2> /dev/null` =~ db/migrate/.* ]]; then
-        mate ${BASH_REMATCH[0]}
+        subl ${BASH_REMATCH[0]}
     fi
 }
 
