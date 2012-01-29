@@ -13,7 +13,7 @@ alias ip='curl whatismyip.org && echo'
 
 # Directory shortcuts
 alias web="cd ~/Sites"
-alias dc="cd ~/Projects/dynamiccreative"
+alias dc="cd ~/Projects/ec/dynamiccreative"
 alias dcc="dc && c"
 alias projects="cd ~/Projects"
 alias proj="projects"
