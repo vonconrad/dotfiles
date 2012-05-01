@@ -63,12 +63,16 @@ alias gca="gc --amend"
 alias gch="git checkout"
 alias gchm="gch master"
 alias gchp="gch production"
+alias gchs="gch staging"
 alias gcp="git cherry-pick"
 alias gd="git diff | mate"
 alias gdown='git pull upstream `current_branch`'
 alias ged="git edit"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(magenta)%d%Creset %s %Cgreen(%cr) %C(yellow)<%an>%Creset' --abbrev-commit --date=relative"
 alias gm="git merge"
+alias gmm="gm master"
+alias gmp="gm production"
+alias gms="gm staging"
 alias gnau="git update-index --no-assume-unchanged"
 alias gpull='git pull'
 alias gpush='git push'
