@@ -9,6 +9,6 @@ function proml {
   local BOLD_WHITE="\[\033[1;37m\]"
   local      WHITE="\[\033[0;37m\]"
 
-  PS1="[$RED\w$WHITE] $GREEN\$(current_branch)$WHITE $WHITE$ "
+  PS1="\[\033[G\][$RED\w$WHITE] $GREEN\$(current_branch)$WHITE $WHITE$ "
 }
 proml
