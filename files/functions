@@ -4,6 +4,15 @@ current_branch() {
 }
 
 # Ruby functions
+maybe_zeus() {
+    if [ -f 'zeus.json' ]
+    then
+        zeus "$@"
+    else
+        `"$@"`
+    fi
+}
+
 create_ruby_app() {
     # Create directory
     mkdir $1

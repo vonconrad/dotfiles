@@ -27,9 +27,9 @@ alias httpd="m /private/etc/apache2/httpd.conf"
 alias vhosts="m /private/etc/apache2/extra/httpd-vhosts.conf"
 
 # Ruby/Rails
-alias c="if [ -f 'script/console' ]; then script/console; else rails console; fi;"
+alias c="if [ -f 'zeus.json' ]; then zeus console; else rails console; fi;"
 alias cm="create_migration"
-alias r='bx rake'
+alias r='maybe_zeus rake'
 alias ra='create_ruby_app'
 alias rg="rails_generate"
 alias rr='r routes'
@@ -40,8 +40,8 @@ alias bi="bundle install && bundler_notify && restart"
 alias bu="bundle update && bundler_notify && restart"
 alias pca="RAILS_ENV=production bundle exec rake assets:precompile"
 alias rbv="rvm-prompt v p g"
-alias rsp="bundle exec rspec"
-alias rspa="bundle exec rspec spec"
+alias rsp="maybe_zeus rspec"
+alias rspa="maybe_zeus rspec spec"
 alias seed="r db:seed"
 alias tlog="tail -f log/development.log"
 alias restart="if [ -f 'tmp/restart.txt' ]; then touch tmp/restart.txt; fi;"
