@@ -1,15 +1,15 @@
 # Basic
-alias reload='. ~/.bashrc'
+alias reload=". ~/.bashrc"
 alias m="s"
 alias m.="s ."
 alias ll="ls -lhG"
 alias lla="ls -lahG"
-alias finder='open'
-alias f='finder'
-alias h='cd ~'
-alias s='subl'
-alias ducks='du -cksh * | sort -rn|head -11'
-alias ip='curl whatismyip.org && echo'
+alias finder="open"
+alias f="finder"
+alias h="cd ~"
+alias s="subl"
+alias ducks="du -cksh * | sort -rn|head -11"
+alias ip="curl whatismyip.org && echo"
 
 # Directory shortcuts
 alias web="cd ~/Sites"
