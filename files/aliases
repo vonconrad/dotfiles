@@ -28,18 +28,11 @@ alias vhosts="m /private/etc/apache2/extra/httpd-vhosts.conf"
 
 # Ruby/Rails
 alias c="if [ -f 'zeus.json' ]; then zeus console; else rails console; fi;"
-alias cm="create_migration"
-alias r='maybe_zeus rake'
-alias ra='create_ruby_app'
-alias rg="rails_generate"
-alias rr='r routes'
-alias rrt='rr > routes.txt'
-alias rt='r -T'
-alias bx="bundle exec"
-alias bi="bundle install && bundler_notify && restart"
-alias bu="bundle update && bundler_notify && restart"
+alias r="maybe_zeus rake"
+alias rr="r routes"
+alias rrt="rr > routes.txt"
+alias rt="r -T"
 alias pca="RAILS_ENV=production bundle exec rake assets:precompile"
-alias rbv="rvm-prompt v p g"
 alias rsp="maybe_zeus rspec"
 alias rspa="maybe_zeus rspec spec"
 alias seed="r db:seed"
@@ -48,7 +41,6 @@ alias restart="if [ -f 'tmp/restart.txt' ]; then touch tmp/restart.txt; fi;"
 alias migrate="r db:migrate"
 alias rollback="r db:rollback"
 alias prepare="r db:test:prepare"
-alias workers="QUEUE=* COUNT=5 r resque:workers"
 
 # Git
 alias ga="git add"
