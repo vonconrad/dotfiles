@@ -5,7 +5,7 @@ current_branch() {
 
 # Ruby functions
 maybe_zeus() {
-    if [ -f '.zeus.sock' ]
+    if [ -e '.zeus.sock' ]
     then
         zeus "$@"
     else

@@ -27,7 +27,7 @@ alias httpd="m /private/etc/apache2/httpd.conf"
 alias vhosts="m /private/etc/apache2/extra/httpd-vhosts.conf"
 
 # Ruby/Rails
-alias c="if [ -f 'zeus.json' ]; then zeus console; else rails console; fi;"
+alias c="if [ -e '.zeus.sock' ]; then zeus console; else rails console; fi;"
 alias r="maybe_zeus rake"
 alias rr="r routes"
 alias rrt="rr > routes.txt"
