@@ -70,6 +70,7 @@ alias gnau="git update-index --no-assume-unchanged"
 alias gpull='git pull'
 alias gpush='git push'
 alias gr="git reset"
+alias grp="git reset -p"
 alias gs="git status -s -b"
 alias gsh="git show"
 alias gst="git stash"
