@@ -10,6 +10,7 @@ alias h="cd ~"
 alias s="subl"
 alias ducks="du -cksh * | sort -rn|head -11"
 alias ip="curl whatismyip.org && echo"
+alias uuid="ruby -e \"require 'securerandom'; print SecureRandom.uuid\" | pbcopy"
 
 # Directory shortcuts
 alias web="cd ~/Sites"
