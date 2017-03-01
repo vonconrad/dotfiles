@@ -93,3 +93,14 @@ alias pull='git pull origin `current_branch`'
 alias push='git push origin `current_branch`'
 alias stash="gst"
 alias status="gs"
+
+# AWS vault
+for profile in envatomarket-prod identity-production; do
+  alias aws-console-${profile}="open \$(aws-vault login ${profile})"
+  alias aws-exec-${profile}="aws-vault exec ${profile} -- true && aws-vault exec ${profile} -- "
+  alias aws-login-${profile}="eval \$(aws-exec-${profile} env | grep AWS | sed 's/^/export /g')"
+  alias aws-clear-${profile}="security delete-generic-password -a '${profile}'"
+done
+
+alias awsi=aws-exec-identity-production
+alias awsic=aws-console-identity-production
