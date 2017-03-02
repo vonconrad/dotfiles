@@ -12,3 +12,10 @@ maybe_zeus() {
         ${@}
     fi
 }
+
+fuckyoutouchbar() {
+    pkill "Touch Bar agent"
+    killall ControlStrip
+    echo ":boom: TouchBar"
+}
+alias fytb=fuckyoutouchbar
