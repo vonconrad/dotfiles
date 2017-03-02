@@ -3,16 +3,6 @@ current_branch() {
     echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 }
 
-# Ruby functions
-maybe_zeus() {
-    if [ -e '.zeus.sock' ]
-    then
-        zeus "$@"
-    else
-        ${@}
-    fi
-}
-
 fuckyoutouchbar() {
     pkill "Touch Bar agent"
     killall ControlStrip
