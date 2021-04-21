@@ -2,9 +2,9 @@
 export PATH=/usr/local/bin:$PATH
 
 # Editors
-export EDITOR='subl -w'
-export LESSEDIT='subl -l %lm %f'
-export GIT_EDITOR='subl -wl1'
+export EDITOR='code -w'
+export LESSEDIT='code'
+export GIT_EDITOR='code -w'
 
 # Do not display postgres info unless it is a warning or error
 export PGOPTIONS='-c client_min_messages=WARNING'
