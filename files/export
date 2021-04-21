@@ -8,15 +8,3 @@ export GIT_EDITOR='code -w'
 
 # Do not display postgres info unless it is a warning or error
 export PGOPTIONS='-c client_min_messages=WARNING'
-
-# GPG daemon
-GPG_TTY=$(tty)
-export GPG_TTY
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-    . "${HOME}/.gpg-agent-info"
-    export GPG_AGENT_INFO
-    export SSH_AUTH_SOCK
-fi
-
-# Rbenv
-eval "$(rbenv init -)"
