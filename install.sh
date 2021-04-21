@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
 
-echo "source ~/.bashrc" >> ../.bash_profile
+echo "source ~/.zshrc" >> ../.zprofile
 
 ls -1d files/* | while read f; do
-  echo "source $(pwd)/$f" >> ../.bashrc
+  echo "source $(pwd)/$f" >> ../.zshrc
 done
 
-source ../.bashrc
+source ../.zshrc
