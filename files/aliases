@@ -1,47 +1,13 @@
 # Basic
 alias reload=". ~/.zshrc"
-alias m="s"
-alias m.="s ."
 alias ll="ls -lhG"
 alias lla="ls -lahG"
 alias finder="open"
 alias f="finder"
 alias h="cd ~"
-alias s="subl -a"
 alias ducks="du -cksh * | sort -rn|head -11"
 alias ip="curl whatismyip.org && echo"
 alias uuid="ruby -e \"require 'securerandom'; print SecureRandom.uuid\" | pbcopy"
-
-# Directory shortcuts
-alias web="cd ~/Sites"
-alias dc="cd ~/Projects/ec/dynamiccreative"
-alias dcc="dc && c"
-alias projects="cd ~/Projects"
-alias proj="projects"
-alias p="projects"
-alias show="setfile -a v"
-alias hide="setfile -a V"
-
-# Config file shortcuts
-alias hosts="m /private/etc/hosts"
-alias httpd="m /private/etc/apache2/httpd.conf"
-alias vhosts="m /private/etc/apache2/extra/httpd-vhosts.conf"
-
-# Ruby/Rails
-alias c="if [ -e '.zeus.sock' ]; then zeus console; else rails console; fi;"
-alias r="maybe_zeus rake"
-alias rr="r routes"
-alias rrt="rr > routes.txt"
-alias rt="r -T"
-alias pca="RAILS_ENV=production r assets:precompile"
-alias rsp="maybe_zeus rspec"
-alias rspa="maybe_zeus rspec spec"
-alias seed="r db:seed"
-alias tlog="tail -f log/development.log"
-alias restart="if [ -f 'tmp/restart.txt' ]; then touch tmp/restart.txt; fi;"
-alias migrate="r db:migrate"
-alias rollback="r db:rollback"
-alias prepare="r db:test:prepare"
 
 # Git
 alias ga="git add"
@@ -69,8 +35,6 @@ alias gmm="gm master"
 alias gmp="gm production"
 alias gms="gm staging"
 alias gnau="git update-index --no-assume-unchanged"
-alias gpull='git pull'
-alias gpush='git push'
 alias gr="git reset"
 alias grb="git rebase"
 alias grba="git rebase --abort"
@@ -82,25 +46,6 @@ alias gsh="git show"
 alias gst="git stash"
 alias gup='git push upstream `current_branch`'
 alias add="gap"
-alias blame="gbl"
-alias branch="gb"
-alias checkout="gch"
-alias commit="gc"
-alias log="gl"
-alias ph="git push heroku master"
 alias pp="pull && push"
 alias pull='git pull origin `current_branch`'
 alias push='git push origin `current_branch`'
-alias stash="gst"
-alias status="gs"
-
-# AWS vault
-for profile in envatomarket-prod identity-production; do
-  alias aws-console-${profile}="open \$(aws-vault login ${profile})"
-  alias aws-exec-${profile}="aws-vault exec ${profile} -- true && aws-vault exec ${profile} -- "
-  alias aws-login-${profile}="eval \$(aws-exec-${profile} env | grep AWS | sed 's/^/export /g')"
-  alias aws-clear-${profile}="security delete-generic-password -a '${profile}'"
-done
-
-alias awsi=aws-exec-identity-production
-alias awsic=aws-console-identity-production
