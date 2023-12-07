@@ -1,14 +1,14 @@
-# Bash prompt
-function proml {
-  local        RED="\[\033[0;31m\]"
-  local      GREEN="\[\033[0;32m\]"
-  local     YELLOW="\[\033[0;33m\]"
-  local       BLUE="\[\033[0;34m\]"
-  local    MAGENTA="\[\033[0;35m\]"
-  local       CYAN="\[\033[0;36m\]"
-  local BOLD_WHITE="\[\033[1;37m\]"
-  local      WHITE="\[\033[0;37m\]"
-
-  PS1="\[\033[G\][$RED\w$WHITE] $GREEN\$(current_branch)$WHITE $WHITE$ "
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo ' ('$branch')'
+  fi
 }
-proml
+
+setopt prompt_subst
+
+PROMPT='[%F{red}%~%f]%F{green}$(git_branch_name)%f $ '
