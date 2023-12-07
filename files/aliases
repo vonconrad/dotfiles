@@ -1,5 +1,5 @@
 # Basic
-alias reload=". ~/.bashrc"
+alias reload=". ~/.zshrc"
 alias m="s"
 alias m.="s ."
 alias ll="ls -lhG"
