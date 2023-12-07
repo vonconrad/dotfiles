@@ -8,3 +8,9 @@ export GIT_EDITOR='code -w'
 
 # Do not display postgres info unless it is a warning or error
 export PGOPTIONS='-c client_min_messages=WARNING'
+
+# Add chruby
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+
+# Enable auto-switching of Rubies
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
